@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +16,12 @@
             --gradient: linear-gradient(135deg, #E0F2FE 0%, #F0F9FF 100%);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             background: var(--gradient);
@@ -36,7 +41,7 @@
             -webkit-backdrop-filter: blur(12px);
             border-radius: 24px;
             padding: 40px 24px;
-            box-shadow: 
+            box-shadow:
                 0 20px 25px -5px rgba(0, 0, 0, 0.1),
                 0 10px 10px -5px rgba(0, 0, 0, 0.04),
                 inset 0 0 0 1px rgba(255, 255, 255, 0.5);
@@ -74,7 +79,8 @@
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid #fff;
-            background: #fff; /* Placeholder */
+            background: #fff;
+            /* Placeholder */
         }
 
         h1 {
@@ -173,19 +179,43 @@
 
         /* Animations */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .container { animation: fadeIn 0.6s ease-out; }
-        .link-item { animation: fadeIn 0.6s ease-out backwards; }
-        .link-item:nth-child(1) { animation-delay: 0.1s; }
-        .link-item:nth-child(2) { animation-delay: 0.2s; }
-        .link-item:nth-child(3) { animation-delay: 0.3s; }
-        .link-item:nth-child(4) { animation-delay: 0.4s; }
+        .container {
+            animation: fadeIn 0.6s ease-out;
+        }
 
+        .link-item {
+            animation: fadeIn 0.6s ease-out backwards;
+        }
+
+        .link-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .link-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .link-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .link-item:nth-child(4) {
+            animation-delay: 0.4s;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -211,25 +241,26 @@
         <!-- Links -->
         <div class="link-list">
             <!-- Special Link (High Priority) -->
-            <a href="Article_Link_Here" class="link-item" style="border-color: var(--accent); background: #F0F9FF;">
+            <a href="https://note.com/vast_clover578/n/naa2c30339900" class="link-item"
+                style="border-color: var(--accent); background: #F0F9FF;">
                 <span class="link-icon">📝</span>
                 <span class="link-text">CARE PRO SWaSH 解説記事</span>
                 <span class="arrow">→</span>
             </a>
 
-            <a href="#" class="link-item">
+            <a href="https://x.com/ai8210534755577?s=21&t=uE6rEC_yhXzGIz2-0MUD3w" class="link-item">
                 <span class="link-icon">✖️</span>
                 <span class="link-text">X (Twitter)</span>
                 <span class="arrow">→</span>
             </a>
 
-            <a href="#" class="link-item">
+            <a href="https://www.instagram.com/ai_beautydealer/" class="link-item">
                 <span class="link-icon">📷</span>
                 <span class="link-text">Instagram</span>
                 <span class="arrow">→</span>
             </a>
 
-            <a href="#" class="link-item">
+            <a href="https://www.threads.com/@ai_beautydealer?igshid=NTc4MTIwNjQ2YQ==" class="link-item">
                 <span class="link-icon">🧵</span>
                 <span class="link-text">Threads</span>
                 <span class="arrow">→</span>
@@ -248,4 +279,5 @@
     </div>
 
 </body>
+
 </html>
